@@ -1,0 +1,84 @@
+{
+	"name": "InputDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SooriyaLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "result.json",
+				"folderPath": "input",
+				"container": "sooriyacontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Thermal_Generation": {
+					"type": "object",
+					"properties": {
+						"Eastern": {
+							"type": "number"
+						},
+						"NorthEastern": {
+							"type": "number"
+						},
+						"Northern": {
+							"type": "number"
+						},
+						"Southern": {
+							"type": "number"
+						},
+						"Western": {
+							"type": "number"
+						}
+					}
+				},
+				"Nuclear_Generation_Estimated": {
+					"type": "object",
+					"properties": {
+						"Eastern": {
+							"type": "number"
+						},
+						"NorthEastern": {
+							"type": "number"
+						},
+						"Northern": {
+							"type": "number"
+						},
+						"Southern": {
+							"type": "number"
+						},
+						"Western": {
+							"type": "number"
+						}
+					}
+				},
+				"Hydro_Generation_Actual": {
+					"type": "object",
+					"properties": {
+						"Eastern": {
+							"type": "integer"
+						},
+						"NorthEastern": {
+							"type": "integer"
+						},
+						"Northern": {
+							"type": "integer"
+						},
+						"Southern": {
+							"type": "integer"
+						},
+						"Western": {
+							"type": "integer"
+						}
+					}
+				}
+			}
+		}
+	}
+}
