@@ -1,0 +1,9 @@
+{
+	"name": "sooriya-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "87439f3c-efb8-4d69-8830-ea1bea3e59ab",
+		"tenantId": "1465e0d9-57f1-4085-a3f0-0790dfe2886b"
+	}
+}
