@@ -1,0 +1,22 @@
+{
+	"name": "outputConditionalSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SooriyaLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "sooriyacontainer"
+			}
+		}
+	}
+}
