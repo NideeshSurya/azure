@@ -1,0 +1,16 @@
+{
+	"name": "conditionalInputSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SooriyaLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			}
+		}
+	}
+}
