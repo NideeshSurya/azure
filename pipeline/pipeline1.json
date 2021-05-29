@@ -27,14 +27,13 @@
 							"userProperties": [],
 							"typeProperties": {
 								"source": {
-									"type": "JsonSource",
+									"type": "BinarySource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"recursive": true,
-										"enablePartitionDiscovery": false
+										"recursive": true
 									},
 									"formatSettings": {
-										"type": "JsonReadSettings"
+										"type": "BinaryReadSettings"
 									}
 								},
 								"sink": {
@@ -47,20 +46,14 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "InputDataSet",
+									"referenceName": "inputConditionalSet",
 									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "outputConditionalSet",
-									"type": "DatasetReference",
-									"parameters": {
-										"folderName": {
-											"value": "@pipeline().parameters.outputFalsy",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						}
