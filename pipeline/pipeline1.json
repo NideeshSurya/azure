@@ -53,7 +53,13 @@
 							"outputs": [
 								{
 									"referenceName": "outputConditionalSet",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"folderName": {
+											"value": "@pipeline().parameters.outputFalsy",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
